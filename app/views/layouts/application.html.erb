@@ -1,75 +1,17 @@
-
-
-
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <%# <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> %>
-
-    <title>Rocket Elevator</title>
+    <title>Hello</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- mobile settings -->
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
-		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
-		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
-
-		<!-- CORE CSS -->
-		<%# <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> %>
-
-		<!-- REVOLUTION SLIDER -->
-		<%# <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" /> %>
-    <%= stylesheet_link_tag("extralayers.css", rel:"stylesheet", type:"text/css") %>
-    <%= stylesheet_link_tag("settings.css", rel:"stylesheet", type:"text/css") %>
-
-
-		<!-- THEME CSS -->
-    <%= stylesheet_link_tag("essentials.css", rel:"stylesheet", type:"text/css") %>
-		<%# <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" /> %>
-    <%= stylesheet_link_tag("layout.css", rel:"stylesheet", type:"text/css") %>
-
-		<!-- PAGE LEVEL SCRIPTS -->
-    <%= stylesheet_link_tag("header-1.css", rel:"stylesheet", type:"text/css") %>
-		<%# <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" /> %>
-    <%= stylesheet_link_tag("blue.css", rel:"stylesheet", type:"text/css", id:"color_scheme") %>
-		<%# <link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" /> %>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <%# <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="assets/js/view/demo.revolution_slider.js"></script> %>
-    <%= javascript_include_tag( "jquery.themepunch.tools.min.js")%>
-    <%= javascript_include_tag( "jquery.themepunch.revolution.min.js")%>
-    <%= javascript_include_tag( "demo.revolution_slider.js")%>
-
-    <%# <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script> %>
-    <%= javascript_include_tag( "jquery-3.3.1.min.js")%>
-		<%# <script src="assets/js/scripts.js"></script> %>
-    <%= javascript_include_tag( "scripts.js")%>
-    
-  
+    <script>var plugin_path = '/assets/plugins/';</script>
   </head>
+
   <body class="smoothscroll enable-animation">
-
-    <%= render 'home/header' %>
+    <%= render 'page/header' %>
     <%= yield %>
-
-    
-
-
-    
   </body>
 </html>

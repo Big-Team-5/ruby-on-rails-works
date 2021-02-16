@@ -13,10 +13,20 @@
  *= require_tree .
  *= require_self
  */
-@import "layout.css";
-@import "header-1.css";
-@import "blue.css";
-@import "essentials.css";
-@import "quote.css";
-@import "extralayers.css";
-@import "settings.css";
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "blue";
+@import "custom-forms-v2";
+@import "essentials";
+@import "header-1";
+@import "layout";
+@import "pack-hotel";
+@import "quote";
+@import "extralayers";
+@import "settings";
+
+ 

@@ -2891,7 +2891,7 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	/* Sticky 60px */
 	#header.fixed {
 		position:fixed;
-		border-bottom:rgba(48, 114, 224) 1px solid;
+		/* border-bottom: rgba(48, 114, 224) 1px solid; */
 	}
 	#header.fixed #topNav a.logo {
 		height:60px;
