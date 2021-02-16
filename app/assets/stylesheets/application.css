@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "layout.css";
+@import "header-1.css";
+@import "blue.css";
+@import "essentials.css";
+@import "quote.css";
+@import "extralayers.css";
+@import "settings.css";

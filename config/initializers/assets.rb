@@ -11,4 +11,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w( scripts.js jquery-3.3.1.min.js essentials.css settings.css extralayers.css demo.revolution_slider.js header-1.css blue.css layout.css jquery.themepunch.tools.min.js jquery.themepunch.revolution.min.js)
+
+
