@@ -51,9 +51,14 @@
                         <%= link_to "CONTACT", "#{root_path}#contact" %>
                             </a>
                         </li>
-                                            <li><!-- CONTACT -->
-                        <%= link_to "LOGIN",  page_quote_path %>
+                        <li class="nav-item dropdown">
+                            <a id="services-nav" class="dropdown-toggle" data-toggle="dropdown" href="#services">
+                                LOGIN 
                             </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><%= link_to "USERS", page_residential_path %></li>
+                                <li class="dropdown-item"><%= link_to "EMPLOYEES",  page_commercial_path %></li>
+                            </ul>
                         </li>
                     </ul>
 
