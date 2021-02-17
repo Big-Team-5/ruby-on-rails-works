@@ -13,7 +13,7 @@
 					<%= image_tag("/assets/RE/Slide-1b.jpg", alt:"home slider image", bgposition:"center top", bgfit:"cover", bgrepeat:"no-repeat")%>
 
 					<div class="tp-caption content_text_center skewfromleft tp-resizeme"
-						data-x="150"
+						data-x="50"
 						data-y="200" 
 						data-speed="500"
 						data-start="2000"
@@ -112,7 +112,8 @@
 						data-endelementdelay="0.1"
 						data-endspeed="500"
 						style="z-index: 4; max-width: auto;">
-							<a class="btn btn-primary bt-xs" href="/residential.html">RESIDENTIAL &nbsp; <i class="fa fa-angle-right"></i></a>
+						<%= link_to "RESIDENTIAL", "/page/residential", class: "btn btn-primary btn-xs" %>
+							<%# <a class="btn btn-primary bt-xs" href="/residential.html">RESIDENTIAL &nbsp; <i class="fa fa-angle-right"></i></a> %>
 					</div>
 
 					<div class="tp-caption sfb tp-resizeme"
@@ -127,7 +128,8 @@
 						data-endelementdelay="0.1"
 						data-endspeed="500"
 						style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-							<a class="btn btn-danger btn-xs" href="/quote.html#quoteform">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+						<%= link_to "   GET A QUOTE   ", "/page/quote", class:"btn btn-danger btn-xs" %>
+							<%# <a class="btn btn-danger btn-xs" href="/quote.html#quoteform">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a> %>
 					</div>
 				</li>
 
@@ -181,7 +183,8 @@
 						data-endelementdelay="0.1"
 						data-endspeed="500"
 						style="z-index: 4; max-width: auto;">
-							<a class="btn btn-primary btn-lg" href="/commercial.html">COMMERCIAL &nbsp; <i class="fa fa-angle-right"></i></a>
+						<%= link_to "COMMERCIAL", "/page/commercial", class: "btn btn-primary btn-lg" %>
+							<%# <a class="btn btn-primary btn-lg" href="/commercial.html">COMMERCIAL &nbsp; <i class="fa fa-angle-right"></i></a> %>
 					</div>
 
 					<div class="tp-caption sfb tp-resizeme"
@@ -196,8 +199,8 @@
 						data-endelementdelay="0.1"
 						data-endspeed="500"
 						style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-							<a class="btn btn-danger btn-lg" href="/quote.html#quoteform">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
-							<%# <%= link_to "GET A QUOTE" , "/page/quote", <i class="fa fa-angle-right"></i>, class: "btn btn-3d btn-danger" %> %>
+						<%= link_to "   GET A QUOTE   ", "/page/quote", class:"btn btn-danger btn-lg" %>
+							<%# <a class="btn btn-danger btn-lg" href="/quote.html#quoteform">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a> %>
 					</div>
 				</li>
 
@@ -237,15 +240,16 @@
 					<%= image_tag("/assets/RE/Serv_Residential-2.jpg",class:"img-fluid", alt:"img")%>
 					<h3 class="mt-10">RESIDENTIAL</h3>
 					<p>If you need us for your residential project</p>
-					<a href="/residential.html" class="btn btn-default">RESIDENTIAL <i class="fa fa-angle-right"></i></a>
+					<%= link_to "RESIDENTIAL", "/page/residentiel", class: "btn btn-default" %>
+					<%# <a href="/residential.html" class="btn btn-default">RESIDENTIAL <i class="fa fa-angle-right"></i></a> %>
 				</div>
 
 				<div class="col-sm-4">
 					<%= image_tag("/assets/RE/Corporate_sm.jpg",class:"img-fluid", alt:"img")%>
 					<h3 class="mt-10">COMMERCIAL</h3>
 					<p>For your Commercial project, small or big. </p>
-					<%# <%= link_to "Commercial",  page_commercial_path, class="btn btn-default",<i class="fa fa-angle-right"></i>%> %>
-					<%= link_to "Commercial",  page_commercial_path %>
+					<%# <%= link_to "Commercial",  page_commercial_path, class="btn btn-default",<i class="fa fa-angle-right"></i>%>
+					<%= link_to "COMMERCIAL", "/page/commercial", class: "btn btn-default" %>
 				</div>
 
 			</div>
@@ -256,14 +260,15 @@
 
 
 	<!-- Parallax -->
-	<section class="parallax parallax-1" style="background:url('/assets/images/RE/Parallax_bg.jpg');">
+	<section class="parallax parallax-1" style="background-image: url(/assets/RE/Parallax_bg.jpg);">
+	<%# <section class="parallax parallax-1" style="background:url('/assets/RE/Parallax_bg.jpg');"> %>
 		<div class="overlay dark-5"></div>
 
 		<div class="container">
 
 			<div class="text-center">
 				<h2 class="fs-40 fw-400">Lifting your projects since 1976</h2>
-				<a class="btn btn-danger btn-lg" href="/quote.html#quoteform">GET A QUOTE <i class="fa fa-angle-right"></i></a> 
+				<%= link_to "GET A QUOTE", "/page/quote", class: "btn btn-danger btn-lg"%>
 				&nbsp; OR &nbsp; 
 				<a class="btn btn-primary btn-lg" href="#services">OUR SERVICES <i class="fa fa-angle-right"></i></a>
 			</div>
@@ -304,7 +309,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Ellies-Winners_best contr.png" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Ellies-Winners_best contr.png" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -336,7 +341,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Autostadt-Silos_Germany.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Autostadt-Silos_Germany.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -369,7 +374,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/PVE52.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/PVE52.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -401,7 +406,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Safest_employers.png" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Safest_employers.png" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -433,7 +438,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Empire-state-Obs_1200x800.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Empire-state-Obs_1200x800.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -465,7 +470,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/BuildIt_awards.png" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/BuildIt_awards.png" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -497,7 +502,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Riosol_Hotel_Spain.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Riosol_Hotel_Spain.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -529,7 +534,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Porsche-tower.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Porsche-tower.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -559,7 +564,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Home-Elevators.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Home-Elevators.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -591,7 +596,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Penn-Station_NY.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Penn-Station_NY.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -623,7 +628,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/Ellies-Winners_best owned.png" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/Ellies-Winners_best owned.png" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
@@ -655,7 +660,7 @@
 									<span class="inner">
 
 										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="assets/images/RE/Portfolio/OWTC_1200x800.jpg" data-plugin-options='{"type":"image"}'>
+										<a class="ico-rounded lightbox" href="assets/RE/Portfolio/OWTC_1200x800.jpg" data-plugin-options='{"type":"image"}'>
 											<span class="fa fa-plus fs-20"></span>
 										</a>
 
