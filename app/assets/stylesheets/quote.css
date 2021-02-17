@@ -1,0 +1,184 @@
+/* FORM ELEMENTS FOR THE ROCKET ELEVATORSQUOTE PAGE */
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+@media (min-width: 768px){
+    .cards {grid-template-columns: repeat(2,1fr);}
+}
+.hidden{
+    display: none !important;
+}
+
+.buildinginfos {
+    color:white;
+    background-color: rgba(49, 49, 49, 1) !important;
+    }
+
+.center {
+    margin:20px 20px;
+}
+
+.infsec {
+	display: block;
+	position: relative;
+	padding: 20px 10px;
+	background-color: rgb(0, 0, 0); /* original #fff */
+}
+.bldtype {
+    display: block;
+    text-align: center;
+	position: relative;
+	padding: 20px 20px 20px 0px;
+	border:rgb(255, 255, 255) 2px solid;
+	background-color: rgb(49,49, 49); /* original #fff */
+}
+.bldtype2 {
+    display:table-row ;
+    text-align: left;
+	position: relative;
+	padding: 20px 0px 20px 60px;
+	border:rgb(255, 255, 255) 2px solid;
+	background-color: rgb(49,49, 49); /* original #fff */
+}
+
+.txtst18 {
+    font-size:18px;
+    padding-right: 40px;
+    }
+.txtst24 {
+    text-align: right;
+    font-size:24px;
+    padding-right: 0px;
+    }
+
+.grid-1{
+    display: grid;
+    grid-template-columns: auto;
+    color:white;
+    padding:10px
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    color:white;
+    padding:10px
+}
+.grid-3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    color:white;
+    padding:10px
+}
+.grid-4{
+    display: grid;
+    height: auto;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    color:white;
+    padding:10px
+}
+/* INPUT SECTION */
+/* ---------------------------------------------- */
+.grid-input{
+
+    display:grid;
+    text-align: center;
+    /* grid.template-columns:repeat(autofill, auto,); */
+    grid-template-areas:
+    'bldgtypes header header header prodlines'
+    'bldgtypes main1 main2 main3 prodlines'
+    'bldgtypes main4 main5 main6 prodlines';
+    grid-gap:30px 60px;
+    padding:15px 80px;
+}
+    .header-input{
+        max-width: 600px;
+        color:white;    
+        font-size: 18px;
+        font-style: italic;    
+        font-weight: 300;
+    }
+    .bldgtypes{
+        color:white;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .button-bldg{
+        border: solid 3px #blue;
+        color:#000;
+        background-color:#rgba(255, 255, 255, 0.2);
+        text-align: center;
+        width: 150px;
+        height:30px;
+        display: inline-block;
+        font-size:16px;
+        font-style:bold;
+        cursor:pointer;
+    }
+    .input1{grid-area: bldgtypes;border: solid 2px white;}
+    .input2{grid-area: header;}
+    .input3{grid-area:prodlines;border: solid 2px white;}
+    .input-m1{grid-area: main1;}
+    .input-m2{grid-area: main2;}
+    .input-m3{grid-area: main3;}
+    .input-m4{grid-area: main4;}
+    .input-m5{grid-area: main5;}
+    .input-m6{grid-area: main6;}
+
+
+/* OUTPUT SECTION */
+
+/* ---------------------------------------------- */
+.output-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+.grid-output{
+
+    display:grid;
+    justify-items: center;
+    grid-template-rows: 100px 100px;
+    grip-gap:30px;
+    padding:10px 300px;
+}
+.grid-item{
+    background-color: rgba(206, 21, 21, 0.719)
+    /* padding: 20px; */
+}
+.item {
+    width: 100px;
+    padding: 10px;    
+    /* border: 2px solid rgba(111,41,97,.5); */
+    display: inline-block;
+    vertical-align: center;
+  }
+.item1{
+    grid-column: 2;
+    grid-row:1;
+}
+.item2{
+    grid-column: 3;
+    grid-row:1;
+}
+.item3{
+    /* padding-left: ; */
+    grid-column:2;
+    grid-row:2;
+}
+.item4{
+    grid-column: 3;
+    grid-row:2;
+}
+.item5{
+    grid-column:4;
+    grid-row:2;
+}

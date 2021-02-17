@@ -1,0 +1,280 @@
+<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+							<!-- Logo -->
+							<a class="logo float-left scrollTo" href="#top">
+								<img src="assets/images/RE/RE_Logo.png" alt="RocketElevatorsLogo" />
+							</a>
+
+								<!--NAV-BAR-->
+							<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+								<nav class="nav-main">
+
+									<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+										<li class="active"><!-- HOME -->
+											<a id="home-nav" href="/index.html">
+												HOME
+											</a>
+										</li>
+										<li class="nav-item dropdown">
+											<a id="services-nav" class="dropdown-toggle" data-toggle="dropdown" href="#services">SERVICES 
+												</a>
+												<ul class="dropdown-menu">
+												<li class="dropdown-item"><a href="/residential.html">RESIDENTIAL</a></li>
+												<li class="dropdown-item"><a href="/commercial.html">COMMERCIAL</a></li>
+												</ul>
+										</li>
+										<li><!-- WORK -->
+												<a id="portfolio-nav" href="/index.html#portfolio">
+													PORTFOLIO
+												</a>
+										</li>
+										<li><!-- NEWS -->
+												<a id="news-nav" href="/index.html#news">
+													NEWS
+												</a>
+										</li>
+										<li><!-- CLIENTS -->
+												<a id="clients-nav" href="/index.html#clients">
+													CLIENTS
+												</a>
+										</li>
+										<li><!-- CONTACT -->
+												<a id="contact-nav" href="/index.html#contact">
+													CONTACT
+												</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+			<!-- -->
+			<section id="slider" class="halfheight mobile-fullheight" style="background:url('assets/images/RE/Parallax_bg.jpg') top;">
+            <%= image_tag("/assets/RE/Parallax_bg.jpg",class:"img-fluid", width:"1500", height:"300", alt:"product line")%>
+
+				<span class="raster overlay dark-3 z-index-0"><!-- dark|light overlay [0 to 9 opacity] --></span>
+
+			</section>
+			<!-- / -->
+
+
+			<div id="quoteform" class="row justify-content-center" style="background-color:#313131">
+					<div class="col-md">
+
+						<header class="text-center">
+							<h1 class="fs-50 mt-20 mb-0">CHECK YOUR PRICE</h1>
+							<p class="fw-300">LET THE JOURNEY TO YOUR NEW ELEVATOR BEGIN</p>
+						</header>
+
+					</div>
+
+			</div>
+
+			<div class="row " style="background-image:-webkit-linear-gradient(left,#3072e0,#9e040a,white);height: 8px;">
+				<hr class="mt-0">
+            </div>
+
+				<!-- ******************* CENTRALE SECTION **************************-->
+
+			<form id="" autocomplete="off">
+				<div id="inputs" class="container">
+					<div class="row pt-50">	
+						<div class="col-md-4 col-xs-12" style="justify-content:right">
+							<label class="txtst24 pr-30 d-inline">Building Type</label>
+							
+							<select id="building-type" class="form-control-pointer stxtst18" name="building-types">
+									<option id="choose" class ="txtst18" value="choose">Choose one type</option>
+									<option id="residential" class="txtst18" value="residential">Residential</option>
+									<option id="commercial" class="txtst18" value="commercial">Commercial</option>
+									<option id="corporate" class="txtst18" value="corporate">Corporate</option>
+									<option id="hybrid" class="txtst18" value="hybrid">Hybrid</option>
+							</select>
+						</div>	
+
+					</div>			
+							
+						<!-- ************************* RESIDENTIAL FORM ******************************* -->
+			
+					<div class="row">
+
+						<div id="number-of-apartments" class="col-md-4 col-xs-12 pt-30 resid">
+							<label for="res-aparts" style="font-size: 18px;">Total No. of Apts</label>
+							<input id="res-apts" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of apartments" name="res-aparts" type="number" min="0" value="0">
+
+						</div>
+						<div id="number-of-floors" class="col-md-4 col-xs-12 pt-30">
+							<label for="res-floors" style="font-size: 18px;">No. of Floors</label>
+							<input id="floors" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of floors" name="res-floors" type="number" min="0" value="0">
+						</div>
+						<div id="number-of-basements" class="col-md-4 col-xs-12 pt-30">
+							<label for="res-basements" style="font-size: 18px;">No. of Basements</label>
+							<input id="basements" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of basements" name="res-basements" type="number" min="0" value="0">
+						</div>  
+			
+					
+						<!-- ************************* COMMERCIAL FORM ******************************* -->
+
+					
+						<div id="number-of-compagnies" class="col-md-4 col-xs-12 pt-30 comm">
+							<label style="font-size: 18px;">No. of Distinct Bus.</label>
+							<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of distinct business" name="comm-distinctbus" type="number" min="0" value="0">
+						</div>
+
+						<div id="number-of-parking-spots" class="col-md-4 col-xs-12 pt-30 commcorphyb">
+							<label style="font-size: 18px;">No. of Parking</label>
+							<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of parkings" name="comm-parking" type="number" min="0" value="0">
+
+						</div>
+						<div id="number-of-elevators" class="col-md-4 col-xs-12 pt-30 comm">
+							<label style="font-size: 18px;">No. of Elevator Needed</label>
+							<input id="elev-needed" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of elevator needed" name="comm-elevators" type="number" min="0" value="0">
+						</div> 
+
+						<!-- ************************* CORPORATE FORM ******************************* -->
+
+
+						<div id="number-of-corporations" class="col-md-4 col-xs-12 pt-30 corp">
+							<label style="font-size: 18px;">No. of Separate Tennant</label>
+							<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of tennant company" name="corp-tennant" type="number" min="0" value="0">
+						</div>
+						<div id="maximum-occupancy" class="col-md-4 col-xs-12 pt-30 corphyb">
+							<label style="font-size: 18px;">No. of Occupant/Floor</label>
+							<input id="occ-flr" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of occ/floors" name="corp-occupants" type="number" min="0" value="0">
+						</div> 
+						<!-- ************************* HYBRID FORM ******************************* -->
+
+
+						<div id="number-of-compagnies" class="col-md-4 col-xs-12 pt-30 hybr">
+							<label style="font-size: 18px;">No. of Distinct Bus.</label>
+							<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of tennants" name="hyb-business" type="number" min="0" value="0">
+						</div>
+
+						<div id="business-hours" class="col-md-4 col-xs-12 pt-30 hybr">
+							<label style="font-size: 18px;">Hr of Activity/Day</label>
+							<input class="form-control go" oninput="validity.valid||(value='');" placeholder="Hr/day maximum 24" name="hyb-activday" type="number" min="1" max="24" value="0">
+						</div> 
+								
+					</div>
+
+				</div>
+
+			</form>
+						<!-- ************************ PRODUCT LINES SECTION ***************************-->
+
+
+			<div class="row mt-50" style="background-image:-webkit-linear-gradient(left,white,#3072e0,#9e040a);height: 4px;">
+				<hr class="mt-0">
+			</div>
+
+			<div id="productline" class="col mt-10">
+
+				<div class="row row-sm-12" style="justify-content:center">
+					<!-- <div class="col col-xs-12"></div> -->
+					<div class="col-md-2 col-xs-12" style="justify-content:center">
+						<a class="txtst24">
+							Product line:
+						</a>
+					</div>
+					<div class="col-md-1 col-sm-12 pt-5" style="justify-content:center">
+						<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="standard" value="standard" checked>
+						<label class="form-check-label d-inline" style="font-size:18px" for="res-step-1">
+							Standard
+						</label>
+					</div>
+					<div class="col-md-1 col-xs-12 pt-5" style="justify-content:center">
+						<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="premium" value="premium">
+						<label class="form-check-label d-inline" style="font-size:18px" for="com-step-1">
+							Premium
+						</label>
+					</div>
+					<div class="col-md-1 col-xs-12 pt-5" style="justify-content:center">
+						<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="excelium" value="excelium">
+						<label class="form-check-label d-inline" style="font-size:18px" for="cor-step-1">
+							Excelium
+						</label>
+					</div>
+
+				</div>	
+			</div>
+
+			<div class="row mt-10" style="background-image:-webkit-linear-gradient(left,#9e040a,white,#3072e0);height: 4px;">
+				<hr class="mt-0">
+			</div>  
+			
+
+			<!-- ******************* OUTPUT SECTION **************************-->
+
+			<div class="container pt-50 pb-30" id="Outpout">
+
+				<div class="row">
+					<div class="col-md-4 col-xs-12" id="elevator-amount">
+						<label style="font-size: 18px">Elevators Required</label>
+						<input id="el-req" class="form-control go" placeholder="# of Elevators" name="elev-needed" type="text" readonly>
+					</div>
+				
+					<div class="col-md-4 col-xs-12" id="elevator-unit-price">
+						<label for="elevator-unit-price" style="font-size: 18px;">Price per Unit</label>
+						<input id="e-u-p" class="form-control go" placeholder="Price/Unit" name="price-unit" type="text" readonly>
+					</div> 
+				</div>
+
+				<div class="row">
+					<div id="elevator-total-price" class="col-md-4 col-xs-12">
+						<label style="font-size: 18px">Sum For all Units</label>
+						<input id= "e-t-p" class="form-control go" placeholder="Total Units Price" name="sum-units" type="text" readonly>
+					</div> 
+				
+					<div id="installation-fees" class="col-md-4 col-xs-12">
+						<label style="font-size: 18px">Installation Fees</label>
+						<input id="inst-fees" class="form-control go" placeholder="Inst.Fees" name="inst-fees" type="text" readonly>
+					</div>
+
+					<div id="final-price" class="col-md-4 col-xs-12">
+						<label style="font-size: 18px">Total Price (Incl. Fees)</label>
+						<input id="fin-price" class="form-control go" placeholder="Total Cost (incl. fees)" name="tot-price" type="text" readonly>
+					</div>
+				</div>
+
+			</div>
+
+			
+
+
+			<div class="row" style="background-image:-webkit-linear-gradient(left,#3072e0,#9e040a,white);height: 8px;">
+				<hr class="mt-0">
+			</div>
+
+            <!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="/assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="/assets/js/quote_calc.js"></script>
+		<script src="/assets/js/scripts.js"></script>
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<script src="assets/js/view/pack_hotel.js"></script>
+
+		<script>
+
+		</script>
+
+	</body>

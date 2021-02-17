@@ -1,0 +1,64 @@
+<!-- TOP NAV -->
+<header id="topNav">
+    <div class="container">
+
+        <!-- Mobile Menu Button -->
+        <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a class="logo float-left scrollTo" href="#top">
+            <%# <img src="assets/images/RE/RE_Logo.png" alt="RocketElevatorsLogo" /> %>
+            <%= image_tag("/assets/RE/RE_Logo.png",alt:"Rocket Elevators Logo")%>
+        </a>
+
+        
+
+        <!---->
+        <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+            <nav class="nav-main">
+
+                <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                    <li><!-- HOME -->
+                        <a id="home-nav" href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="services-nav" class="dropdown-toggle" data-toggle="dropdown" href="#services">
+                            SERVICES 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="/residential.html">RESIDENTIAL</a></li>
+                            <li class="dropdown-item"><a href="/commercial.html">COMMERCIAL</a></li>
+                        </ul>
+                    </li>
+                    <li><!-- WORK -->
+                        <a id="portfolio-nav" href="#portfolio">
+                            PORTFOLIO
+                        </a>
+                    </li>
+                    <li><!-- NEWS -->
+                        <a id="news-nav" href="#news">
+                            NEWS
+                        </a>
+                    </li>
+                    <li><!-- CLIENTS -->
+                        <a id="clients-nav" href="#clients">
+                            CLIENTS
+                        </a>
+                    </li>
+                    <li><!-- CONTACT -->
+                        <a id="contact-nav" href="#contact">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+    </div>
+</header>
+<!-- /Top Nav -->
