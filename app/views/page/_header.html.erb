@@ -8,9 +8,9 @@
         </button>
 
         <!-- Logo -->
-        <a class="logo float-left scrollTo" href="#top">
+        <%# <a class="logo float-left scrollTo" href="#top"> %>
             <%# <img src="assets/images/RE/RE_Logo.png" alt="RocketElevatorsLogo" /> %>
-            <%= image_tag("/assets/RE/RE_Logo.png",alt:"Rocket Elevators Logo")%>
+            <%= image_tag("/assets/RE/RE_Logo.png", class: "logo float-left scrollTo") %>
         </a>
 
         
@@ -21,37 +21,33 @@
 
                 <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
                     <li><!-- HOME -->
-                        <a id="home-nav" href="#">
-                            HOME
-                        </a>
+                    
+                        <%= link_to "HOME", root_path %>
+                       
                     </li>
                     <li class="nav-item dropdown">
                         <a id="services-nav" class="dropdown-toggle" data-toggle="dropdown" href="#services">
                             SERVICES 
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-item"><a href="/residential.html">RESIDENTIAL</a></li>
-                            <li class="dropdown-item"><a href="/commercial.html">COMMERCIAL</a></li>
+                            <li class="dropdown-item"><%= link_to "Residential", page_residential_path %></li>
+                            <li class="dropdown-item"><%= link_to "Commercial",  page_commercial_path %></li>
                         </ul>
                     </li>
                     <li><!-- WORK -->
-                        <a id="portfolio-nav" href="#portfolio">
-                            PORTFOLIO
+                        <%= link_to "PORTFOLIO", "#{root_path}#portfolio" %>
                         </a>
                     </li>
                     <li><!-- NEWS -->
-                        <a id="news-nav" href="#news">
-                            NEWS
+                    <%= link_to "NEWS", "#{root_path}#news" %>
                         </a>
                     </li>
                     <li><!-- CLIENTS -->
-                        <a id="clients-nav" href="#clients">
-                            CLIENTS
+                    <%= link_to "CLIENTS", "#{root_path}#clients" %>
                         </a>
                     </li>
                     <li><!-- CONTACT -->
-                        <a id="contact-nav" href="#contact">
-                            CONTACT
+                    <%= link_to "CONTACT", "#{root_path}#contact" %>
                         </a>
                     </li>
                 </ul>
