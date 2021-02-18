@@ -41,35 +41,7 @@ INSERT INTO `ar_internal_metadata` VALUES ('environment','development','2021-02-
 /*!40000 ALTER TABLE `ar_internal_metadata` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `employees`
---
 
-DROP TABLE IF EXISTS `employees`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `employees` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(255) DEFAULT NULL,
-  `prenom` varchar(255) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `active` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `employees`
---
-
-LOCK TABLES `employees` WRITE;
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` VALUES (1,'Carrier','Thomas','Engineer','2021-02-16 14:49:11','2021-02-16 14:49:11','thomas.carrier@codeboxx.biz',1),(2,'Lortie','Mathieu','Engineer','2021-02-16 14:49:25','2021-02-16 14:49:25','mathieu.lortie@codeboxx.biz',1),(3,'Boutin','David','Engineer','2021-02-16 14:51:04','2021-02-16 14:51:04','david.boutin@codeboxx.biz',1),(4,'Houde','Mathieu','Captain','2021-02-16 14:53:06','2021-02-16 14:53:06','mathieu.houde@codeboxx.biz',1),(5,'Martin','Chantal','Director Assistant','2021-02-16 14:53:21','2021-02-16 14:53:21','martin.chantal@codeboxx.biz',1),(6,'Fortier','Nadya','Director','2021-02-16 14:55:58','2021-02-16 14:55:58','nadya.fortier@codeboxx.biz',1),(7,'Nicolas','Genest','CEO','2021-02-16 14:59:30','2021-02-16 14:59:30','nicolas.genest@codeboxx.biz',1);
-/*!40000 ALTER TABLE `employees` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `quotes`

@@ -1,37 +1,53 @@
-<%= form_with(model: employee, local: true) do |form| %>
-  <% if employee.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+<div class="container">
+   <div class="row align-items-center mt-200">
+      <div class="col-12">
 
-      <ul>
-      <% employee.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+      </div>
+   </div>
+   <div class="row align-items-center">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">      
+      
+        <%= form_with(model: employee, local: true) do |form| %>
+          <% if employee.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
-  </div>
+              <ul>
+              <% employee.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
-  </div>
+          <div class="field">
+            <%= form.label :last_name %>
+            <%= form.text_field :last_name ,class:"text-muted"%>
+          </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+          <div class="field">
+            <%= form.label :first_name %>
+            <%= form.text_field :first_name ,class:"text-muted" %>
+          </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
+          <div class="field">
+            <%= form.label :title %>
+            <%= form.text_field :title ,class:"text-muted"%>
+          </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+          <div class="field">
+            <%= form.label :email %>
+            <%= form.text_field :email ,class:"text-muted"%>
+          </div>
+
+          <div class="actions">
+            <%= form.submit %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-sm-4">
+      </div>
+   </div>
+</div> 

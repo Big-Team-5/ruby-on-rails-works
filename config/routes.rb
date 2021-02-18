@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stories
   resources :employees
   devise_for :users
   root 'page#index'
