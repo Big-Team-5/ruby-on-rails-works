@@ -1,33 +1,44 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<h1>Employees</h1>
+    <div class="row align-items-center">
+      <div class="col">
+      </div>
+      <div class="col">         
+          <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Last name</th>
-      <th>First name</th>
-      <th>Title</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          <h1>Employees</h1>
 
-  <tbody>
-    <% @employees.each do |employee| %>
-      <tr>
-        <td><%= employee.last_name %></td>
-        <td><%= employee.first_name %></td>
-        <td><%= employee.title %></td>
-        <td><%= employee.email %></td>
-        <td><%= link_to 'Show', employee %></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          <table class="table table-bordered">
+            <thead >
+              <tr>
+                <th scope="col">Last name</th>
+                <th scope="col">First name</th>
+                <th scope="col">Title</th>
+                <th scope="col">Email</th>
+                <th colspan="3"></th>
+              </tr>
+            </thead>
 
-<br>
+            <tbody>
+              <% @employees.each do |employee| %>
+                <tr>
+                  <td><%= employee.last_name %></td>
+                  <td><%= employee.first_name %></td>
+                  <td><%= employee.title %></td>
+                  <td><%= employee.email %></td>
+                  <td><%= link_to 'Show', employee, class:"text-success" %></td>
+                  <td><%= link_to 'Edit', edit_employee_path(employee), class:"text-warning"  %></td>
+                  <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' }, class:"text-danger"  %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
 
-<%= link_to 'New Employee', new_employee_path %>
+          <br>
+
+          <%= link_to 'New Employee', new_employee_path %>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+</div> 

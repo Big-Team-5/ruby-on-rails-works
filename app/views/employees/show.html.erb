@@ -1,24 +1,45 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+   <div class="row align-items-center mt-100">
+      <div class="col-12">
 
-<p>
-  <strong>Last name:</strong>
-  <%= @employee.last_name %>
-</p>
+      </div>
+   </div>
+   <div class="row align-items-center">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
 
-<p>
-  <strong>First name:</strong>
-  <%= @employee.first_name %>
-</p>
+              <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @employee.title %>
-</p>
+              <p>
+                <strong>Last name:</strong>
+                <%= @employee.last_name %>
+              </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @employee.email %>
-</p>
+              <p>
+                <strong>First name:</strong>
+                <%= @employee.first_name %>
+              </p>
 
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+              <p>
+                <strong>Title:</strong>
+                <%= @employee.title %>
+              </p>
+
+              <p>
+                <strong>Email:</strong>
+                <%= @employee.email %>
+              </p>
+
+              <%= link_to 'Edit', edit_employee_path(@employee) %> |
+              <%= link_to 'Back', employees_path %>
+      </div>
+      <div class="col-sm-4">
+      </div>
+   </div>
+    <div class="row align-items-center mb-100">
+      <div class="col-12">
+
+      </div>
+   </div>
+</div> 
