@@ -6,13 +6,15 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'%>
     <script>var plugin_path = '/assets/plugins/';</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Is4GjO_9unj2RTF0MRXI_zGuWV_7UB4&callback=initMap"></script>
 
   </head>
 
   <body class="smoothscroll enable-animation">
     <%= render 'page/header' %>
     <%= yield %>
+    <%= render 'page/footer' %>
   </body>
 </html>

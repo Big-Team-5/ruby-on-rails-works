@@ -1049,3 +1049,27 @@
 		</div>
 	</section>
 </div>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: 46.84304793442687,
+					lng: -71.27974061889321,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: 46.84304793442687,
+					lng: -71.27974061889321,
+					title: 'Rocket Elevators'
+						   
+				});
+
+			});
+
+		</script>
