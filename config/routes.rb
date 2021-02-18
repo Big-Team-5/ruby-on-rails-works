@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get  'page/residential'
   get  'page/commercial'
   get  'page/quote'
-  # resources :users, only: [:new, :create]
+  get  'sessions/login'
+  get  'users/new'
+  resources :users, only: [:new, :create]
   # get 'login', to: 'sessions#new'
   # post 'login', to: 'sessions#create'
   # get 'welcome', to: 'sessions#welcome'

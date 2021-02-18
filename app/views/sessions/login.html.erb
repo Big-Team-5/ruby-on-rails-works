@@ -1,8 +1,25 @@
-<h2>Login to your account</h2>
-   <%= form_tag '/login' do %>
-   <%= label_tag :username%>
-   <%= text_field_tag :username %>
-   <%= label_tag :password%>
-   <%= password_field_tag :password%>
-   <%= submit_tag "Login", class:"btn btn-default btn-sm"%>
-<%end%>
+<div class="container">
+   <div class="row align-items-center mt-200">
+      <div class="col-12">
+
+      </div>
+   </div>
+   <div class="row align-items-center">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+         <h2>Login to your account</h2>
+            <%= form_tag '/login' do %>
+            <%= label_tag :username%>
+            <%= text_field_tag :username %>
+            <%= label_tag :password%>
+            <%= password_field_tag :password%>
+            <%= submit_tag "Login", class:"btn btn-default btn-sm"%>
+         <%end%>
+      </div>
+      <div class="col-sm-4">
+      </div>
+   </div>
+</div> 
+<%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
