@@ -1,7 +1,7 @@
 <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
 <!-- TOP NAV -->
     <header id="topNav">
-        <div class="container">
+        <div class="row ml-200 mr-50">
 
             <!-- Mobile Menu Button -->
             <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
@@ -51,14 +51,17 @@
                         <%= link_to "CONTACT", "#{root_path}#contact" %>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a id="services-nav" class="dropdown-toggle" data-toggle="dropdown" href="#services">
-                                LOGIN 
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><%= link_to "USERS", page_residential_path %></li>
-                                <li class="dropdown-item"><%= link_to "EMPLOYEES",  page_commercial_path %></li>
-                            </ul>
+
+                        <li>
+                            <form class="d-flex justify-content-center align-content-center mt-20 ml-60 mr-20 mb-0">
+                                <%= link_to "Login", "/login", class: "btn btn-primary navbar-btn btn-sm" %>
+                            </form>
+                        </li>
+
+                        <li>
+                            <form class="d-flex justify-content-right align-content-center mt-20 mr-20 mb-0">
+                                <%= link_to "Sign Up", "/new", class: "btn btn-success navbar-btn btn-sm" %>
+                            </form>
                         </li>
                     </ul>
 
