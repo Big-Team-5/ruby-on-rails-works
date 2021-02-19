@@ -1,0 +1,265 @@
+<<!-- wrapper -->
+<div id="wrapper">
+
+	<!-- -->
+	<section id="slider" class="halfheight mobile-fullheight" style="background:url('assets/images/RE/Parallax_bg.jpg') top;">
+	<%= image_tag("/assets/RE/Parallax_bg.jpg",class:"img-fluid", width:"1500", height:"300", alt:"product line")%>
+
+		<span class="raster overlay dark-3 z-index-0"><!-- dark|light overlay [0 to 9 opacity] --></span>
+
+	</section>
+	<!-- / -->
+
+
+	<div id="quoteform" class="row justify-content-center" style="background-color:#313131">
+			<div class="col-md">
+
+				<header class="text-center">
+					<h1 class="fs-50 mt-20 mb-0">CHECK YOUR PRICE</h1>
+					<p class="fw-300">LET THE JOURNEY TO YOUR NEW ELEVATOR BEGIN</p>
+				</header>
+
+			</div>
+
+	</div>
+
+	<div class="row " style="background-image:-webkit-linear-gradient(left,#3072e0,#9e040a,white);height: 8px;">
+		<hr class="mt-0">
+	</div>
+
+		<!-- ******************* CENTRALE SECTION **************************-->
+
+	<form id="" autocomplete="off">
+		<div id="inputs" class="container">
+			<div class="row pt-50">	
+				<div class="col-md-4 col-xs-12" style="justify-content:right">
+					<label class="txtst24 pr-30 d-inline">Building Type</label>
+					
+					<select id="building-type" class="form-control-pointer stxtst18" name="building-types">
+							<option id="choose" class ="txtst18" value="choose">Choose one type</option>
+							<option id="residential" class="txtst18" value="residential">Residential</option>
+							<option id="commercial" class="txtst18" value="commercial">Commercial</option>
+							<option id="corporate" class="txtst18" value="corporate">Corporate</option>
+							<option id="hybrid" class="txtst18" value="hybrid">Hybrid</option>
+					</select>
+				</div>	
+
+			</div>			
+					
+				<!-- ************************* RESIDENTIAL FORM ******************************* -->
+	
+			<div class="row">
+
+				<div id="number-of-apartments" class="col-md-4 col-xs-12 pt-30 resid">
+					<label for="res-aparts" style="font-size: 18px;">Total No. of Apts</label>
+					<input id="res-apts" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of apartments" name="res-aparts" type="number" min="0" value="0">
+
+				</div>
+				<div id="number-of-floors" class="col-md-4 col-xs-12 pt-30">
+					<label for="res-floors" style="font-size: 18px;">No. of Floors</label>
+					<input id="floors" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of floors" name="res-floors" type="number" min="0" value="0">
+				</div>
+				<div id="number-of-basements" class="col-md-4 col-xs-12 pt-30">
+					<label for="res-basements" style="font-size: 18px;">No. of Basements</label>
+					<input id="basements" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of basements" name="res-basements" type="number" min="0" value="0">
+				</div>  
+	
+			
+				<!-- ************************* COMMERCIAL FORM ******************************* -->
+
+			
+				<div id="number-of-compagnies" class="col-md-4 col-xs-12 pt-30 comm">
+					<label style="font-size: 18px;">No. of Distinct Bus.</label>
+					<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of distinct business" name="comm-distinctbus" type="number" min="0" value="0">
+				</div>
+
+				<div id="number-of-parking-spots" class="col-md-4 col-xs-12 pt-30 commcorphyb">
+					<label style="font-size: 18px;">No. of Parking</label>
+					<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of parkings" name="comm-parking" type="number" min="0" value="0">
+
+				</div>
+				<div id="number-of-elevators" class="col-md-4 col-xs-12 pt-30 comm">
+					<label style="font-size: 18px;">No. of Elevator Needed</label>
+					<input id="elev-needed" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of elevator needed" name="comm-elevators" type="number" min="0" value="0">
+				</div> 
+
+				<!-- ************************* CORPORATE FORM ******************************* -->
+
+
+				<div id="number-of-corporations" class="col-md-4 col-xs-12 pt-30 corp">
+					<label style="font-size: 18px;">No. of Separate Tennant</label>
+					<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of tennant company" name="corp-tennant" type="number" min="0" value="0">
+				</div>
+				<div id="maximum-occupancy" class="col-md-4 col-xs-12 pt-30 corphyb">
+					<label style="font-size: 18px;">No. of Occupant/Floor</label>
+					<input id="occ-flr" class="form-control go" onkeyup="finalprice();" oninput=" validity.valid||(value='');" placeholder="# of occ/floors" name="corp-occupants" type="number" min="0" value="0">
+				</div> 
+				<!-- ************************* HYBRID FORM ******************************* -->
+
+
+				<div id="number-of-compagnies" class="col-md-4 col-xs-12 pt-30 hybr">
+					<label style="font-size: 18px;">No. of Distinct Bus.</label>
+					<input class="form-control go" oninput="validity.valid||(value='');" placeholder="# of tennants" name="hyb-business" type="number" min="0" value="0">
+				</div>
+
+				<div id="business-hours" class="col-md-4 col-xs-12 pt-30 hybr">
+					<label style="font-size: 18px;">Hr of Activity/Day</label>
+					<input class="form-control go" oninput="validity.valid||(value='');" placeholder="Hr/day maximum 24" name="hyb-activday" type="number" min="1" max="24" value="0">
+				</div> 
+						
+			</div>
+
+		</div>
+
+	</form>
+				<!-- ************************ PRODUCT LINES SECTION ***************************-->
+
+
+	<div class="row mt-50" style="background-image:-webkit-linear-gradient(left,white,#3072e0,#9e040a);height: 4px;">
+		<hr class="mt-0">
+	</div>
+
+	<div id="productline" class="col mt-10">
+
+		<div class="row row-sm-12" style="justify-content:center">
+			<!-- <div class="col col-xs-12"></div> -->
+			<div class="col-md-2 col-xs-12" style="justify-content:center">
+				<a class="txtst24">
+					Product line:
+				</a>
+			</div>
+			<div class="col-md-1 col-sm-12 pt-5" style="justify-content:center">
+				<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="standard" value="standard" checked>
+				<label class="form-check-label d-inline" style="font-size:18px" for="res-step-1">
+					Standard
+				</label>
+			</div>
+			<div class="col-md-1 col-xs-12 pt-5" style="justify-content:center">
+				<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="premium" value="premium">
+				<label class="form-check-label d-inline" style="font-size:18px" for="com-step-1">
+					Premium
+				</label>
+			</div>
+			<div class="col-md-1 col-xs-12 pt-5" style="justify-content:center">
+				<input onclick="finalprice()" class="form-check-input" type="radio" name="product-line" id="excelium" value="excelium">
+				<label class="form-check-label d-inline" style="font-size:18px" for="cor-step-1">
+					Excelium
+				</label>
+			</div>
+
+		</div>	
+	</div>
+
+	<div class="row mt-10" style="background-image:-webkit-linear-gradient(left,#9e040a,white,#3072e0);height: 4px;">
+		<hr class="mt-0">
+	</div>  
+	
+
+	<!-- ******************* OUTPUT SECTION **************************-->
+
+	<div class="container pt-50 pb-30" id="Outpout">
+
+    <%= form_with(model: quote_form, local: true) do |form| %>
+  <% if quote_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quote_form.errors.count, "error") %> prohibited this quote_form from being saved:</h2>
+
+      <ul>
+      <% quote_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+		<div class="row">
+			<div class="col-md-4 col-xs-12" id="elevator-amount">
+				<%= form.label :Elevators, style:"font-size: 18px;" %>
+                <%= form.text_field :Elevators, class:".col-6 .col-md-4", id:"el-req" %>
+			</div>
+		
+			<div class="col-md-4 col-xs-12" id="elevator-unit-price">
+				<%= form.label :Price_Per_Unit, style:"font-size: 18px;" %>
+                <%= form.text_field :Price_Per_Unit, class:".col-6 .col-md-4", id:"e-u-p" %>
+			</div> 
+		</div>
+
+		<div class="row">
+			<div id="elevator-total-price" class="col-md-4 col-xs-12">
+				<%= form.label :Sum_For_All_Units, style:"font-size: 18px;" %>
+                <%= form.text_field :Sum_For_All_Units, class:".col-6 .col-md-4", id:"e-t-p" %>	
+			</div> 
+		
+			<div id="installation-fees" class="col-md-4 col-xs-12">
+				<%= form.label :Installation_Fees, style:"font-size: 18px;" %>
+                <%= form.text_field :Installation_Fees, class:".col-6 .col-md-4", id:"inst-fees" %>
+			</div>
+
+			<div id="final-price" class="col-md-4 col-xs-12">
+				<%= form.label :Total_Price, style:"font-size: 18px;" %>
+                <%= form.text_field :Total_Price, class:".col-6 .col-md-4", id:"fin-price" %>
+			</div>
+		</div>
+
+	</div>
+   
+
+	<div class="row mt-10" style="background-image:-webkit-linear-gradient(left,#9e040a,white,#3072e0);height: 4px;">
+		<hr class="mt-0">
+	</div>  
+
+	 
+	<div class="container pt-50 pb-30" id="Info">
+
+		<div class="container pt-50 pb-30" id="Info">
+			<div class="row align-items-start">
+				<div class="field">
+					<%= form.label :FirstName, style:"font-size: 18px;" %>
+					<%= form.text_field :FirstName , class:".col-6 .col-md-4"  %>
+				</div>
+			</div>
+			<div class="row align-items-start">
+				<div class="field">
+					<%= form.label :LastName, style:"font-size: 18px;" %>
+					<%= form.text_field :LastName , class:".col-6 .col-md-4"  %>
+				</div>
+			</div>
+			<div class="row align-items-start">
+				<div class="field">
+					<%= form.label :PhoneNumber, style:"font-size: 18px;" %>
+					<%= form.text_field :PhoneNumber , class:".col-6 .col-md-4"  %>
+				</div>
+			</div>
+			<div class="row align-items-start">
+			<div class="field">
+					<%= form.label :Email, style:"font-size: 18px;" %>
+					<%= form.text_field :Email, class:".col-6 .col-md-4" %>
+				</div>
+			</div>
+			<div class="row align-items-start">
+				<div class="actions">
+					<%= form.submit class:"btn btn-danger btn-md" , style:"font-size: 18px;" %>
+				</div>
+			</div>
+				
+			</div>
+
+
+      <!--  <%= render 'form', quote_form: @quote_form %>
+
+        <%= link_to 'Back', quote_forms_path %>
+
+	-->
+	
+	</div>
+	
+	 <% end %>
+
+
+	<div class="row" style="background-image:-webkit-linear-gradient(left,#3072e0,#9e040a,white);height: 8px;">
+		<hr class="mt-0">
+	</div>
+</div>
+

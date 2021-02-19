@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quote Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Phonenumber</th>
+      <th>Email</th>
+      <th>Elevators</th>
+      <th>Price Per Unit</th>
+      <th>Sum For All Units</th>
+      <th>Installation Fees</th>
+      <th>Total Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quote_forms.each do |quote_form| %>
+      <tr>
+        <td><%= quote_form.FirstName %></td>
+        <td><%= quote_form.LastName %></td>
+        <td><%= quote_form.PhoneNumber %></td>
+        <td><%= quote_form.Email %></td>
+        <td><%= quote_form.Elevators %></td>
+        <td><%= quote_form.Price_Per_Unit %></td>
+        <td><%= quote_form.Sum_For_All_Units %></td>
+        <td><%= quote_form.Installation_Fees %></td>
+        <td><%= quote_form.Total_Price %></td>
+        <td><%= link_to 'Show', quote_form %></td>
+        <td><%= link_to 'Edit', edit_quote_form_path(quote_form) %></td>
+        <td><%= link_to 'Destroy', quote_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quote Form', new_quote_form_path %>

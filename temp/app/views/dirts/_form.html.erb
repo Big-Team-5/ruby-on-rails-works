@@ -1,0 +1,16 @@
+<%= form_with(model: dirt) do |form| %>
+  <%= render "error_messages", resource: form.object %>
+
+  <div class="mb-6">
+    <%= form.label :game, class: "label" %>
+    <%= form.text_field :game, class: "input" %>
+  </div>
+
+  <div class="mb-6 flex justify-between items-center">
+    <%= form.button class: "btn btn-default" %>
+
+    <% if form.object.persisted? %>
+      <%= link_to 'Delete', form.object, class: "btn btn-default", method: :delete, data: { remote: true, confirm: "Are you sure?" } %>
+    <% end %>
+  </div>
+<% end %>

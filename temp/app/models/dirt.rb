@@ -1,0 +1,2 @@
+class Dirt < ApplicationRecord
+end

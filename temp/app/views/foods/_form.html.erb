@@ -1,0 +1,28 @@
+<%= form_with(model: food, local: true) do |form| %>
+  <% if food.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(food.errors.count, "error") %> prohibited this quote_form from being saved:</h2>
+
+      <ul>
+      <% food.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="container pt-50 pb-30" id="Info">
+ <div class="row align-items-start">
+      <div class="field">
+        <%= form.label :price, style:"font-size: 18px;" %>
+        <%= form.text_field :price , class:".col-6 .col-md-4"  %>
+      </div>
+</div>
+ 
+    <div class="row align-items-start">
+      <div class="actions">
+      <%= form.submit class:"btn btn-danger btn-md" , style:"font-size: 18px;" %>
+      </div>
+    </div>
+</div>
+<% end %>

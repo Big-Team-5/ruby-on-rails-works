@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @quote_form.FirstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @quote_form.LastName %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @quote_form.PhoneNumber %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @quote_form.Email %>
+</p>
+<p>
+  <strong>Elevators:</strong>
+  <%= @quote_form.Elevators %>
+</p>
+<p>
+  <strong>Price Per Unit:</strong>
+  <%= @quote_form.Price_Per_Unit %>
+</p>
+<p>
+  <strong>Sum For All Units:</strong>
+  <%= @quote_form.Sum_For_All_Units %>
+</p>
+<p>
+  <strong>Installation Fees:</strong>
+  <%= @quote_form.Installation_Fees %>
+</p>
+<p>
+  <strong>Total Price:</strong>
+  <%= @quote_form.Total_Price%>
+</p>
+
+<%= link_to 'Edit', edit_quote_form_path(@quote_form) %> |
+<%= link_to 'Back', quote_forms_path %>

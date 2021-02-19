@@ -1,0 +1,45 @@
+<%= form_with(model: quote_form, local: true) do |form| %>
+  <% if quote_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quote_form.errors.count, "error") %> prohibited this quote_form from being saved:</h2>
+
+      <ul>
+      <% quote_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="container pt-50 pb-30" id="Info">
+ <div class="row align-items-start">
+      <div class="field">
+        <%= form.label :FirstName, style:"font-size: 18px;" %>
+        <%= form.text_field :FirstName , class:".col-6 .col-md-4"  %>
+      </div>
+</div>
+ <div class="row align-items-start">
+      <div class="field">
+        <%= form.label :LastName, style:"font-size: 18px;" %>
+        <%= form.text_field :LastName , class:".col-6 .col-md-4"  %>
+      </div>
+  </div>
+ <div class="row align-items-start">
+      <div class="field">
+        <%= form.label :PhoneNumber, style:"font-size: 18px;" %>
+        <%= form.text_field :PhoneNumber , class:".col-6 .col-md-4"  %>
+      </div>
+  </div>
+ <div class="row align-items-start">
+      <div class="field">
+        <%= form.label :Email, style:"font-size: 18px;" %>
+        <%= form.text_field :Email, class:".col-6 .col-md-4" %>
+      </div>
+</div>
+    <div class="row align-items-start">
+      <div class="actions">
+      <%= form.submit class:"btn btn-danger btn-md" , style:"font-size: 18px;" %>
+      </div>
+    </div>
+</div>
+<% end %>
