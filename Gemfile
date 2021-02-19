@@ -38,6 +38,9 @@ gem 'rails_admin', '~> 2.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 #gem 'devise-i18n', '~> 1.9', '>= 1.9.2'
 gem 'devise'
+gem 'toastr-rails'
+gem 'jquery-rails'
+gem 'cancancan'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

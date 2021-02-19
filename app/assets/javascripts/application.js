@@ -14,3 +14,13 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require toastr
+/* app/asssets/javascripts/application.css */
+//
+*= require toastr
+//
+// app/asssets/javascripts/application.js
+//
+//= require toastr
