@@ -1,4 +1,7 @@
 RailsAdmin.config do |config|
+  config.authenticate_with do
+    warden.authenticate! :scope => :admin
+  end
 
   ### Popular gems integration
 
