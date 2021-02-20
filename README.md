@@ -48,7 +48,6 @@ GEMFILE:
         gem 'rvm1-capistrano3', require: false
         gem 'capistrano3-puma'
     end
-
     group :test do
         gem 'capybara', '>= 2.15'
         gem 'selenium-webdriver'
